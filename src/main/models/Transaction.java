@@ -3,43 +3,43 @@ package main.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Transaction {
+public class Transaction extends Coin {
     private boolean isCoinbase;
-    private List<Coin> input;
+    private List<Coin> input = new ArrayList<>();
     private List<Coin> output = new ArrayList<>();
 
-    public Transaction() {
+    public Transaction(String add) {
+        super(add, (long) Math.random());
         this.isCoinbase = true;
         this.input = new ArrayList<>();
-        this.output = setCoin();
+        output.addAll(this.setCoin(super.getCoin()));
     }
 
-    public Transaction(List<Coin> input) {
+    public Transaction(List<Coin> input,String address, Long amount) {
+        super(address,amount,input);
         this.isCoinbase = false;
-        this.input = input;
-        setOutput();
+        this.input.addAll(input);
+        this.setOutput(super.getCoin(),input);
     }
 
     public List<Coin> getInput() {
         return input;
     }
 
-    public void setInput(List<Coin> input) {
-        this.input = input;
-    }
-
     public List<Coin> getOutput() {
         return output;
     }
 
-    private void setOutput() {
-        Coin newCoin = new Coin("Coin 2", 1);
-        getInput().forEach(x -> newCoin.setAmount(newCoin.getAmount() + x.getAmount()));
-        output.add(newCoin);
+    private void setOutput(Coin coin, List<Coin> input) {
+        output.add(coin);
     }
 
-    private List<Coin> setCoin() {
-        Coin coin = new Coin("First Coin", 1);
+    private List<Coin> setCoin(Coin coin) {
         return List.of(coin);
     }
+
+    public Transaction getTransactions(){
+        return this;
+    }
+
 }

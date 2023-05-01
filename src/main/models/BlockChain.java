@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BlockChain {
-    private List<Block> blocks = null;
+    private List<Block> blocks = new ArrayList<>();
 
     public BlockChain(List<Block> blocks) {
-        this.blocks = new ArrayList<>();
+        this.blocks.addAll(blocks);
     }
 
     public List<Block> getBlocks() {

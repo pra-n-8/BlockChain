@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3af27111-45d3-4e0c-8f22-d88589ecc0b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlockChain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/models/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/models/BlockChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/models/Coin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/models/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BlockChainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BlockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/CoinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TransactionTest.java" afterDir="false" />
+    <list default="true" id="3af27111-45d3-4e0c-8f22-d88589ecc0b3" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/services/BlockChainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/services/CoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/BlockChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/BlockChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Coin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +61,26 @@
       <recent name="test" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="BlockChain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,8 +90,16 @@
       <option name="presentableId" value="Default" />
       <updated>1682463011904</updated>
       <workItem from="1682463025984" duration="152000" />
-      <workItem from="1682895559101" duration="4256000" />
+      <workItem from="1682895559101" duration="20318000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1682899974538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682899974538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
 </project>

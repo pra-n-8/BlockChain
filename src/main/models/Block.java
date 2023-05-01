@@ -4,13 +4,19 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Block {
+public class Block extends Transaction {
     private Instant time;
-    private List<Transaction> transactionList;
+    private List<Transaction> transactionList = new ArrayList<>();
 
-    public Block() {
+    public Block(String add) {
+        super(add);
         time = Instant.now();
-        this.transactionList = new ArrayList<>();
+        this.transactionList.add(super.getTransactions());
+    }
+    public Block(List<Coin> inputs, String address, Long amount){
+        super(inputs,address,amount);
+        time = Instant.now();
+        this.transactionList.add(super.getTransactions());
     }
 
     public Instant getTime() {
