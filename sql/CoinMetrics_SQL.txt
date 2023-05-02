@@ -1,0 +1,17 @@
+-- Question C
+select c.coin_address 
+from coins c 
+group by c.coin_address 
+having mod(sum(c.coin_amount),2)=0
+order by sum(c.coin_amount) desc 
+limit 1;
+
+
+-- Question D
+select b.block_hash as blocks, sum(c.coin_amount) as spent_volume
+from blocks b
+join transactions t on t.tx_block_hash = b.block_hash
+join coins c on c.coin_spender_tx_hash = t.tx_hash
+group by b.block_hash
+order by spent_volume desc
+limit 10;
