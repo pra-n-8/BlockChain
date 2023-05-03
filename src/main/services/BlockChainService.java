@@ -28,20 +28,22 @@ class Time {
 
 }
 
-
 /**
- * This class provides functionality to find the address with the maximum inbound volume within a specified time interval in a given blockchain.
+ * This class provides functionality to find the address with the maximum
+ * inbound volume within a specified time interval in a given blockchain.
  */
 
 public class BlockChainService {
     HashMap<String, Long> maxValAdd = new HashMap<>();
 
     /**
-     * Finds the address with the maximum inbound volume within the specified time interval in the given blockchain.
+     * Finds the address with the maximum inbound volume within the specified time
+     * interval in the given blockchain.
      *
      * @param chain          the blockchain to search
-     * @param interval_start the start of the time interval, in format (THH:mm:ss.SSS)
-     * @param interval_end   the end of the time interval, in  format (THH:mm:ss.SSS)
+     * @param interval_start the start of the time interval, in format
+     *                       (THH:mm:ss.SSS)
+     * @param interval_end   the end of the time interval, in format (THH:mm:ss.SSS)
      * @return the address with the maximum inbound volume, as a string
      */
     public String find_maximum_inbound_volume_address(BlockChain chain, String interval_start, String interval_end) {
@@ -56,13 +58,18 @@ public class BlockChainService {
             }
         } catch (Exception e) {
             return null;
-        } finally {
-            return sortMaxVal().toString();
+        }
+        if(sortMaxVal() == null){
+            return null;
+        }
+        else{
+        return sortMaxVal().toString();
         }
     }
 
     /**
-     * Adds the specified block's inbound volume to the maximum inbound volume for its address.
+     * Adds the specified block's inbound volume to the maximum inbound volume for
+     * its address.
      *
      * @param block the block to add
      */
@@ -76,28 +83,38 @@ public class BlockChainService {
     }
 
     /**
-     * Sorts the maximum inbound volumes in descending order and returns the address with the highest value.
+     * Sorts the maximum inbound volumes in descending order and returns the address
+     * with the highest value.
      *
      * @return the address with the maximum inbound volume
      */
     private Map.Entry sortMaxVal() {
-        ArrayList arraylist = new ArrayList<>();
-        for (Map.Entry entry : maxValAdd.entrySet()) {
-            arraylist.add(entry);
-        }
-        Collections.sort(arraylist, new Comparator<Map.Entry>() {
-            @Override
-            public int compare(Map.Entry o1, Map.Entry o2) {
-                return Long.compare((Long) o1.getValue(), (Long) o2.getValue());
+        try {
+            ArrayList arraylist = new ArrayList<>();
+            for (Map.Entry entry : maxValAdd.entrySet()) {
+                arraylist.add(entry);
             }
-        });
-        Collections.reverse(arraylist);
-        return (Map.Entry) arraylist.get(0);
+            Collections.sort(arraylist, new Comparator<Map.Entry>() {
+                @Override
+                public int compare(Map.Entry o1, Map.Entry o2) {
+                    return Long.compare((Long) o1.getValue(), (Long) o2.getValue());
+                }
+            });
+            Collections.reverse(arraylist);
+            if (arraylist.size() > 0) {
+                return (Map.Entry) arraylist.get(0);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private Time getTime(String time) {
         String[] split = time.split("T");
         String[] splitTime = split[1].split(":");
-        return new Time(Integer.parseInt(splitTime[0]), Integer.parseInt(splitTime[1]), Double.parseDouble(splitTime[2].substring(0, splitTime[2].length() - 1)));
+        return new Time(Integer.parseInt(splitTime[0]), Integer.parseInt(splitTime[1]),
+                Double.parseDouble(splitTime[2].substring(0, splitTime[2].length() - 1)));
     }
 }

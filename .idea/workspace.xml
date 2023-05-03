@@ -2,68 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af27111-45d3-4e0c-8f22-d88589ecc0b3" name="Changes" comment="All problems solved">
-      <change afterPath="$PROJECT_DIR$/JavaDoc/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/copy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/jquery-ui.overrides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/legal/COPYRIGHT" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/legal/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/legal/jquery.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/legal/jqueryUI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/Block.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/BlockChain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/Coin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/Transaction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/models/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/services/BlockChainService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/services/CoinService.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/services/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/main/services/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/module-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/script-dir/jquery-3.6.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/script-dir/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/script-dir/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/search-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/tag-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaDoc/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlockChain.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/BlockChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/BlockChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Coin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/models/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/models/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/services/BlockChainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/BlockChainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/services/CoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/CoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BlockChainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BlockChainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BlockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CoinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CoinTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlockChain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChain.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,23 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -195,6 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.CoinTest.getAddress" />
+      <item itemvalue="JUnit.CoinTest.getAmount" />
+      <item itemvalue="JUnit.TransactionTest.getInput" />
+      <item itemvalue="JUnit.TransactionTest.getOutput" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -215,6 +163,7 @@
       <updated>1682463011904</updated>
       <workItem from="1682463025984" duration="152000" />
       <workItem from="1682895559101" duration="26995000" />
+      <workItem from="1683156192345" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1682899974538</created>
@@ -252,5 +201,9 @@
     <MESSAGE value="init" />
     <MESSAGE value="All problems solved" />
     <option name="LAST_COMMIT_MESSAGE" value="All problems solved" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -60,7 +60,7 @@ public class Main {
 
         //        Printing the max inbound volume address
         System.out.println("Max inbound volume is at :");
-        System.out.println(bcs.find_maximum_inbound_volume_address(chain, "T20:00:00", "T24:00:00"));
+        System.out.println(bcs.find_maximum_inbound_volume_address(chain, "T7:00:00", "T9:00:00"));
 
         //      Get the coinbase ancestors of a coin
         CoinService cs = new CoinService();
