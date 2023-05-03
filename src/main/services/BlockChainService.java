@@ -3,6 +3,7 @@ package main.services;
 import main.models.Block;
 import main.models.BlockChain;
 
+import java.time.Instant;
 import java.util.*;
 
 /**
@@ -46,13 +47,10 @@ public class BlockChainService {
      * @param interval_end   the end of the time interval, in format (THH:mm:ss.SSS)
      * @return the address with the maximum inbound volume, as a string
      */
-    public String find_maximum_inbound_volume_address(BlockChain chain, String interval_start, String interval_end) {
-        Time startTime = getTime(interval_start);
-        Time endTime = getTime(interval_end);
+    public String find_maximum_inbound_volume_address(BlockChain chain, Instant interval_start, Instant interval_end) {
         try {
             for (Block block : chain.getBlocks()) {
-                Time blockTime = getTime(block.getTime().toString());
-                if (blockTime.hours >= startTime.hours && blockTime.hours < endTime.hours) {
+                if (block.getTime().isAfter(interval_start) && block.getTime().isBefore(interval_end)) {
                     addMaxValAdd(block);
                 }
             }
@@ -109,12 +107,5 @@ public class BlockChainService {
             e.printStackTrace();
         }
         return null;
-    }
-
-    private Time getTime(String time) {
-        String[] split = time.split("T");
-        String[] splitTime = split[1].split(":");
-        return new Time(Integer.parseInt(splitTime[0]), Integer.parseInt(splitTime[1]),
-                Double.parseDouble(splitTime[2].substring(0, splitTime[2].length() - 1)));
     }
 }
