@@ -7,29 +7,6 @@ import java.time.Instant;
 import java.util.*;
 
 /**
- * Represents a time in hours, minutes, and seconds.
- */
-class Time {
-    int hours;
-    int mins;
-    Double sec;
-
-    /**
-     * Constructs a new Time object with the specified hours, minutes, and seconds.
-     *
-     * @param hours the number of hours
-     * @param mins  the number of minutes
-     * @param sec   the number of seconds
-     */
-    public Time(int hours, int mins, double sec) {
-        this.hours = hours;
-        this.mins = mins;
-        this.sec = sec;
-    }
-
-}
-
-/**
  * This class provides functionality to find the address with the maximum
  * inbound volume within a specified time interval in a given blockchain.
  */
