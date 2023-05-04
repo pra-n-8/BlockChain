@@ -42,6 +42,7 @@ public class BlockChainService {
         }
     }
 
+
     /**
      * Adds the specified block's inbound volume to the maximum inbound volume for
      * its address.

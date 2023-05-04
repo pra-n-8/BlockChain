@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3af27111-45d3-4e0c-8f22-d88589ecc0b3" name="Changes" comment="All problems solved">
-      <change afterPath="$PROJECT_DIR$/BlockChain.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlockChain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BlockChain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/services/BlockChainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/services/BlockChainService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +164,8 @@
       <workItem from="1682463025984" duration="152000" />
       <workItem from="1682895559101" duration="26995000" />
       <workItem from="1683156192345" duration="60000" />
+      <workItem from="1683158359830" duration="203000" />
+      <workItem from="1683223415727" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1682899974538</created>
